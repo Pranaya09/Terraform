@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket         = "itssamplebucket"        # Reference the S3 bucket
+    bucket         = "itssamplebuckets"        # Reference the S3 bucket
     key            = "terraform.tfstate"     # Path to store the state file (e.g., "project/terraform.tfstate")
     dynamodb_table = "terraform-state-lock-dynamo"
     region         = "us-east-1"
